@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Engagement Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="invite" id="invite">
+    <h1 class="script title" id="headline"></h1>
+    <p class="occasion" id="occasion"></p>
+
+    <div class="names">
+      <span class="script name" id="name1"></span>
+      <span class="amp" id="amp"></span>
+      <span class="script name" id="name2"></span>
+    </div>
+
+    <div class="when">
+      <span class="side" id="weekday"></span>
+      <span class="center">
+        <span class="month" id="month"></span>
+        <span class="script day" id="day"></span>
+      </span>
+      <span class="side" id="time"></span>
+    </div>
+
+    <p class="extra">
+      <span id="weddingLine"></span>
+      <span id="venue"></span>
+    </p>
+
+    <a class="map-link" id="mapLink" target="_blank" rel="noopener" hidden></a>
+
+    <img class="photo" id="photo" alt="Two hands holding wedding rings">
+  </main>
+
+  <button class="edit-toggle" id="editToggle" type="button">Edit details</button>
+
+  <aside class="panel" id="panel" aria-label="Edit invitation" hidden>
+    <div class="panel-head">
+      <strong>Edit invitation</strong>
+      <button type="button" id="closePanel" aria-label="Close">&times;</button>
+    </div>
+    <div class="fields" id="fields"></div>
+    <div class="panel-actions">
+      <button type="button" id="copyLink">Copy shareable link</button>
+      <button type="button" id="resetBtn" class="ghost">Reset</button>
+    </div>
+    <p class="hint" id="hint"></p>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
