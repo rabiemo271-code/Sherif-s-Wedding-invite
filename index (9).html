@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Engagement Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500&family=Aref+Ruqaa:wght@400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+  <!-- ENVELOPE INTRO -->
+  <div class="envelope" id="envelope" aria-label="Invitation envelope">
+    <div class="flap flap-l">
+      <div class="paper">
+        <svg class="folds" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 0 L50 50 L0 100" />
+        </svg>
+      </div>
+    </div>
+    <div class="flap flap-r">
+      <div class="paper">
+        <svg class="folds" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M100 0 L50 50 L100 100" />
+        </svg>
+        <svg class="sprig" viewBox="0 0 120 200" aria-hidden="true">
+          <path pathLength="1" d="M60 200 C58 150 66 110 62 70" />
+          <path pathLength="1" d="M62 70 C50 62 50 40 56 28 C60 36 64 36 68 28 C74 40 74 62 62 70 Z" />
+          <path pathLength="1" d="M60 200 C80 160 100 130 112 96" />
+          <path pathLength="1" d="M112 96 C100 92 98 74 104 64 C108 72 112 72 116 64 C122 76 122 92 112 96 Z" />
+          <path pathLength="1" d="M60 182 C40 162 30 140 34 118 C50 130 58 152 60 182" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="seal-wrap" id="sealWrap">
+      <p class="to script" id="envTo" hidden></p>
+      <button class="seal" id="sealBtn" type="button" aria-label="Open the invitation">
+        <span class="seal-text script" id="sealText"></span>
+      </button>
+      <p class="open-hint" id="openHint"></p>
+    </div>
+  </div>
+
+  <!-- INVITATION -->
+  <main class="invite" id="invite">
+    <p class="dear" id="dear" hidden></p>
+    <h1 class="script title" id="headline"></h1>
+    <p class="occasion" id="occasion"></p>
+
+    <div class="names">
+      <span class="script name" id="name1"></span>
+      <span class="amp" id="amp"></span>
+      <span class="script name" id="name2"></span>
+    </div>
+
+    <div class="when">
+      <span class="side" id="weekday"></span>
+      <span class="center">
+        <span class="month" id="month"></span>
+        <span class="script day" id="day"></span>
+      </span>
+      <span class="side" id="time"></span>
+    </div>
+
+    <p class="extra">
+      <span id="weddingLine"></span>
+      <span id="venue"></span>
+    </p>
+
+    <a class="map-link" id="mapLink" target="_blank" rel="noopener" hidden></a>
+
+    <img class="photo" id="photo" alt="Two hands holding wedding rings">
+  </main>
+
+  <!-- EDITOR -->
+  <button class="edit-toggle" id="editToggle" type="button">Edit details</button>
+
+  <aside class="panel" id="panel" aria-label="Edit invitation" hidden>
+    <div class="panel-head">
+      <strong>Edit invitation</strong>
+      <button type="button" id="closePanel" aria-label="Close">&times;</button>
+    </div>
+    <div class="fields" id="fields"></div>
+    <div class="panel-actions">
+      <button type="button" id="copyLink">Copy shareable link</button>
+      <button type="button" id="replayBtn" class="ghost">Replay envelope</button>
+      <button type="button" id="resetBtn" class="ghost">Reset</button>
+    </div>
+    <p class="hint" id="hint"></p>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
