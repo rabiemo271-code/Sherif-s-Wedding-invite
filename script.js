@@ -76,8 +76,10 @@ function render(){
   $("envTo").textContent = greet; $("envTo").hidden = !greet;
 
   const map = $("mapLink");
-  if (state.mapUrl) { map.href = state.mapUrl; map.textContent = state.mapText; map.hidden = false; }
-  else map.hidden = true;
+if (state.mapUrl) {
+  map.href = /^https?:\/\//i.test(state.mapUrl) ? state.mapUrl : "https://" + state.mapUrl;
+  map.textContent = state.mapText; map.hidden = false;
+}  else map.hidden = true;
 
   const photo = $("photo");
   if (state.photo) { if (photo.getAttribute("src") !== state.photo) photo.src = state.photo; photo.hidden = false; }
