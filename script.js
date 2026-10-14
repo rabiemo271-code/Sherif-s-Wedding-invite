@@ -14,8 +14,8 @@ const DEFAULTS = {
   time:      "8:30 PM",
   weddingLabel: "Wedding:",
   weddingDate:  "26/11/2026",
-  venue:     "G islan - maddi",
-  mapUrl:    "",                 // paste a Google Maps link to show a "View location" button
+  venue:     "G Island Hall",
+  mapUrl:    "X68Q+6M9, Nile Corniche, Maadi, Cairo Governorate 4210009",                 // paste a Google Maps link to show a "View location" button
   mapText:   "View location",
   photo:     "photo.jpg",        // path or URL of the image at the bottom
   color:     "#7a1f35"           // main text color
