@@ -157,8 +157,8 @@ function buildFields(){
 function shareLink(){
   const p = new URLSearchParams();
   Object.keys(DEFAULTS).forEach(k => { if (state[k] !== DEFAULTS[k]) p.set(k, state[k]); });
-  const q = p.toString();
-  return location.href.split("?")[0].split("#")[0] + (q ? "?" + q : "");
+    p.set("guest", "1");   // guests never see the edit button
+  return location.href.split("?")[0].split("#")[0] + "?" + p.toString();
 }
 
 const panel = $("panel"), hint = $("hint");
