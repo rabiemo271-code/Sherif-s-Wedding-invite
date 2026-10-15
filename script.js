@@ -10,7 +10,7 @@ const DEFAULTS = {
   name2:     "Amira",
   amp:       "&",
   weekday:   "Friday",
-  month:     "April",
+  month:     "Novamper",
   day:       "26",
   time:      "8:30 PM",
   weddingLabel: "Wedding:",
