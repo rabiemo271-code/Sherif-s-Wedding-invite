@@ -6,16 +6,16 @@ const DEFAULTS = {
   /* invitation text */
   headline:  "Join Us",
   occasion:  "For the engagement of",
-  name1:     "Sherif",
+  name1:     "Mohamed",
   name2:     "Amira",
   amp:       "&",
-  weekday:   "Friday",
+  weekday:   "Thursday",
   month:     "Novamper",
   day:       "26",
   time:      "8:30 PM",
   weddingLabel: "Wedding:",
   weddingDate:  "26/11/2026",
-  venue:     "G island - maddi",
+  venue:     "G Island Hall",
   mapUrl:    "https://maps.app.goo.gl/b3a3GauhkfXubHm36",                 // paste a Google Maps link to show a location button
   mapText:   "View location",
   photo:     "photo.jpg",        // path or URL of the image at the bottom
